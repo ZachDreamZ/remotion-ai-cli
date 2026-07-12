@@ -11,6 +11,7 @@ import addFormats from 'ajv-formats';
 import { fileURLToPath } from 'url';
 import { setupSfxCommands, setupTransitionCommand, setupCaptionCommand, setupZoomCommand, setupGradeCommand, setupSyncCommand } from './commands.mjs';
 import { setupMaskCommand, setupBlendCommand, setupSilenceCommand, setupBrollCommand, setupPyramidCommand, setupHookCommand, setupNoiseCommand } from './advanced.mjs';
+import { setupTranscribeCommand, setupHighlightsCommand, setupSpeakersCommand, setupTrimCommand, setupKaraokeCommand, setupScenesCommand, setupNormalizeCommand, setupCropCommand, setupMcpCommand } from './clipping.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TOOL_ROOT = path.join(__dirname, '..');
@@ -1550,6 +1551,15 @@ setupBrollCommand(program, getProject, saveProject);
 setupPyramidCommand(program, getProject, saveProject);
 setupHookCommand(program, getProject, saveProject);
 setupNoiseCommand(program, getProject, saveProject);
+setupTranscribeCommand(program, getProject, saveProject);
+setupHighlightsCommand(program, getProject, saveProject);
+setupSpeakersCommand(program, getProject, saveProject);
+setupTrimCommand(program, getProject, saveProject);
+setupKaraokeCommand(program, getProject, saveProject);
+setupScenesCommand(program, getProject, saveProject);
+setupNormalizeCommand(program, getProject, saveProject);
+setupCropCommand(program, getProject, saveProject);
+setupMcpCommand(program, getProject, saveProject);
 
 // --- HISTORY COMMANDS ---
 
