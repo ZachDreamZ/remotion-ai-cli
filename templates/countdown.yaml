@@ -1,0 +1,29 @@
+name: countdown
+description: 3-2-1 countdown with scale effect
+duration: 90
+steps:
+  - action: duration
+    frames: 90
+  - action: text-add
+    content: "3"
+    start: 0
+    end: 30
+    color: white
+    fontSize: 200
+    y: center
+  - action: text-add
+    content: "2"
+    start: 30
+    end: 60
+    color: yellow
+    fontSize: 200
+    y: center
+  - action: text-add
+    content: "1"
+    start: 60
+    end: 85
+    color: red
+    fontSize: 200
+    y: center
+  - action: render
+    output: countdown.mp4

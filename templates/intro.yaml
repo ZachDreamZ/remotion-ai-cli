@@ -1,0 +1,15 @@
+name: intro
+description: Short intro video with title text
+duration: 90
+steps:
+  - action: duration
+    frames: 90
+  - action: text-add
+    content: "Welcome"
+    start: 0
+    end: 90
+    color: white
+    fontSize: 120
+    y: center
+  - action: render
+    output: intro.mp4

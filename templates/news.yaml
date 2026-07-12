@@ -1,0 +1,29 @@
+name: Tech News
+description: "Breaking tech news format with headline, key points, impact"
+category: news
+duration: 600
+scenes:
+  - effect: flash
+    text: "BREAKING"
+    duration: 60
+    accent: "#FF0040"
+  - effect: scale
+    text: "{headline}"
+    duration: 150
+    accent: "#FFFFFF"
+  - effect: slide-left
+    text: "{key_point_1}"
+    duration: 120
+    accent: "#4ECDC4"
+  - effect: slide-right
+    text: "{key_point_2}"
+    duration: 120
+    accent: "#FFE66D"
+  - effect: glitch
+    text: "{impact}"
+    duration: 90
+    accent: "#A855F7"
+  - effect: kinetic
+    text: "Follow for updates"
+    duration: 60
+    accent: "#00FF88"

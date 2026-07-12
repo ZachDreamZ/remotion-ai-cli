@@ -1,0 +1,15 @@
+name: title-card
+description: Clean centered title card with kinetic entrance
+duration: 60
+steps:
+  - action: duration
+    frames: 60
+  - action: text-add
+    content: "Your Title"
+    start: 0
+    end: 60
+    color: white
+    fontSize: 120
+    y: center
+  - action: render
+    output: title-card.mp4

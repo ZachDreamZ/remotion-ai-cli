@@ -1,0 +1,33 @@
+name: Promo
+description: "Product/service promotion with hook, features, CTA"
+category: marketing
+duration: 600
+scenes:
+  - effect: glitch
+    text: "Introducing"
+    duration: 60
+    accent: "#FF0040"
+  - effect: scale
+    text: "{product_name}"
+    duration: 120
+    accent: "#00FF88"
+  - effect: wave
+    text: "{feature_1}"
+    duration: 90
+    accent: "#4ECDC4"
+  - effect: wave
+    text: "{feature_2}"
+    duration: 90
+    accent: "#A855F7"
+  - effect: wave
+    text: "{feature_3}"
+    duration: 90
+    accent: "#FFE66D"
+  - effect: pulse
+    text: "{cta}"
+    duration: 90
+    accent: "#FF6B6B"
+  - effect: scale
+    text: "Link in bio"
+    duration: 60
+    accent: "#00FF88"

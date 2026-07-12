@@ -1,0 +1,33 @@
+name: Explainer
+description: "Quick explainer video with hook, problem, solution, CTA"
+category: education
+duration: 900
+scenes:
+  - effect: scale
+    text: "{topic}"
+    duration: 90
+    accent: "#00FF88"
+  - effect: kinetic
+    text: "Here's what you need to know"
+    duration: 90
+    accent: "#FFFFFF"
+  - effect: typewriter
+    text: "{point_1}"
+    duration: 150
+    accent: "#4ECDC4"
+  - effect: wave
+    text: "{point_2}"
+    duration: 150
+    accent: "#A855F7"
+  - effect: bounce
+    text: "{point_3}"
+    duration: 150
+    accent: "#FFE66D"
+  - effect: shader
+    text: "The takeaway"
+    duration: 90
+    accent: "#FF6B6B"
+  - effect: scale
+    text: "Follow for more"
+    duration: 90
+    accent: "#00FF88"

@@ -1,0 +1,33 @@
+name: Tutorial
+description: "Step-by-step tutorial with numbered steps"
+category: education
+duration: 1200
+scenes:
+  - effect: scale
+    text: "How to {task}"
+    duration: 120
+    accent: "#00FF88"
+  - effect: slide-left
+    text: "Step 1: {step_1}"
+    duration: 180
+    accent: "#4ECDC4"
+  - effect: slide-left
+    text: "Step 2: {step_2}"
+    duration: 180
+    accent: "#A855F7"
+  - effect: slide-left
+    text: "Step 3: {step_3}"
+    duration: 180
+    accent: "#FFE66D"
+  - effect: slide-left
+    text: "Step 4: {step_4}"
+    duration: 180
+    accent: "#FF6B6B"
+  - effect: shader
+    text: "That's it!"
+    duration: 90
+    accent: "#FFFFFF"
+  - effect: bounce
+    text: "Follow for more tutorials"
+    duration: 90
+    accent: "#00FF88"

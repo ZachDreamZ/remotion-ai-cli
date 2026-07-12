@@ -1,0 +1,22 @@
+name: outro
+description: Outro video with call to action
+duration: 120
+steps:
+  - action: duration
+    frames: 120
+  - action: text-add
+    content: "Thanks for Watching!"
+    start: 0
+    end: 120
+    color: white
+    fontSize: 80
+    y: center
+  - action: text-add
+    content: "Subscribe for more"
+    start: 30
+    end: 120
+    color: yellow
+    fontSize: 40
+    y: bottom
+  - action: render
+    output: outro.mp4

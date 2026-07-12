@@ -1,0 +1,10 @@
+node_modules/
+.remotion-ai/
+public/
+out/
+*.mp4
+*.mp3
+*.wav
+*.tgz
+.DS_Store
+Thumbs.db

@@ -1,0 +1,33 @@
+name: Listicle
+description: "Top N list video with countdown ranking"
+category: entertainment
+duration: 900
+scenes:
+  - effect: flash
+    text: "Top {n} {topic}"
+    duration: 120
+    accent: "#FF6B66"
+  - effect: bounce
+    text: "#{n} {item_1}"
+    duration: 120
+    accent: "#00FF88"
+  - effect: bounce
+    text: "#{n_minus_1} {item_2}"
+    duration: 120
+    accent: "#4ECDC4"
+  - effect: bounce
+    text: "#{n_minus_2} {item_3}"
+    duration: 120
+    accent: "#FFE66D"
+  - effect: bounce
+    text: "#2 {item_4}"
+    duration: 120
+    accent: "#A855F7"
+  - effect: scale
+    text: "#1 {item_5}"
+    duration: 150
+    accent: "#FF6B66"
+  - effect: kinetic
+    text: "Follow for more"
+    duration: 90
+    accent: "#00FF88"

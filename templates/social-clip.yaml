@@ -1,0 +1,15 @@
+name: social-clip
+description: Vertical social media clip with captions
+duration: 60
+steps:
+  - action: duration
+    frames: 60
+  - action: text-add
+    content: "Your caption here"
+    start: 0
+    end: 60
+    color: white
+    fontSize: 60
+    y: bottom
+  - action: render
+    output: social-clip.mp4
