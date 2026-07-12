@@ -280,6 +280,23 @@ export const MainComposition: React.FC = () => {
           style = { ...style, opacity };
         }
 
+        // ─── Mask ───
+        if (text.mask && text.mask.type !== 'none') {
+          const radius = text.mask.radius || 20;
+          if (text.mask.type === 'rounded') {
+            style = { ...style, borderRadius: `${radius}px` };
+          } else if (text.mask.type === 'circle') {
+            style = { ...style, borderRadius: '50%' };
+          } else if (text.mask.type === 'diagonal') {
+            style = { ...style, clipPath: 'polygon(0 0, 100% 0, 100% 80%, 0 100%)' };
+          }
+        }
+
+        // ─── Blend Mode ───
+        if (text.blend && text.blend.mode !== 'normal') {
+          style = { ...style, mixBlendMode: text.blend.mode.replace('-', ''), opacity: text.blend.opacity || 0.8 };
+        }
+
         return (
           <AbsoluteFill
             key={text.id}

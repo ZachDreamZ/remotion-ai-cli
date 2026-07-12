@@ -55,13 +55,29 @@
               "position": {
                 "type": "object",
                 "properties": {
-                  "x": { "enum": ["left", "center", "right"] },
-                  "y": { "enum": ["top", "center", "bottom"] }
+                  "x": { "type": "string" },
+                  "y": { "type": "string" }
                 }
               },
               "effect": { "enum": ["none", "kinetic", "liquid", "shader", "typewriter", "wave", "glitch", "bounce", "scale", "flash", "pulse", "slide-left", "slide-right", "zoom-in", "zoom-out", "spin", "shake"] },
               "bg": { "type": ["string", "null"] },
-              "accent": { "type": "string" }
+              "accent": { "type": ["string", "null"] },
+              "mask": {
+                "type": "object",
+                "properties": {
+                  "type": { "type": "string" },
+                  "radius": { "type": "number" }
+                },
+                "required": ["type"]
+              },
+              "blend": {
+                "type": "object",
+                "properties": {
+                  "mode": { "type": "string" },
+                  "opacity": { "type": "number" }
+                },
+                "required": ["mode"]
+              }
             },
             "required": ["id", "content", "startFrame", "endFrame"],
             "additionalProperties": false

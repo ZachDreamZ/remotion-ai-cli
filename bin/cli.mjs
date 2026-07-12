@@ -10,6 +10,7 @@ import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { fileURLToPath } from 'url';
 import { setupSfxCommands, setupTransitionCommand, setupCaptionCommand, setupZoomCommand, setupGradeCommand, setupSyncCommand } from './commands.mjs';
+import { setupMaskCommand, setupBlendCommand, setupSilenceCommand, setupBrollCommand, setupPyramidCommand, setupHookCommand, setupNoiseCommand } from './advanced.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TOOL_ROOT = path.join(__dirname, '..');
@@ -1542,6 +1543,13 @@ setupCaptionCommand(program, getProject, saveProject);
 setupZoomCommand(program, getProject, saveProject);
 setupGradeCommand(program, getProject, saveProject);
 setupSyncCommand(program, getProject, saveProject);
+setupMaskCommand(program, getProject, saveProject);
+setupBlendCommand(program, getProject, saveProject);
+setupSilenceCommand(program, getProject, saveProject);
+setupBrollCommand(program, getProject, saveProject);
+setupPyramidCommand(program, getProject, saveProject);
+setupHookCommand(program, getProject, saveProject);
+setupNoiseCommand(program, getProject, saveProject);
 
 // --- HISTORY COMMANDS ---
 
