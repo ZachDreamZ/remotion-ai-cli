@@ -9,6 +9,7 @@ import * as yaml from 'js-yaml';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { fileURLToPath } from 'url';
+import { setupSfxCommands, setupTransitionCommand, setupCaptionCommand, setupZoomCommand, setupGradeCommand, setupSyncCommand } from './commands.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TOOL_ROOT = path.join(__dirname, '..');
@@ -1532,6 +1533,15 @@ program
       console.log(chalk.gray(`   Run: remotion-ai idea "${t.topic}"\n`));
     });
   });
+
+// --- SFX, TRANSITIONS, CAPTIONS, ZOOM, GRADE, SYNC ---
+
+setupSfxCommands(program, getProject, saveProject, ASSETS_DIR);
+setupTransitionCommand(program, getProject, saveProject);
+setupCaptionCommand(program, getProject, saveProject);
+setupZoomCommand(program, getProject, saveProject);
+setupGradeCommand(program, getProject, saveProject);
+setupSyncCommand(program, getProject, saveProject);
 
 // --- HISTORY COMMANDS ---
 

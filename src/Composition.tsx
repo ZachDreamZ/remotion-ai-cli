@@ -253,6 +253,27 @@ export const MainComposition: React.FC = () => {
           const opacity = interpolate(progress, [0, 0.15, 0.85, 1], [0, 1, 1, 0]);
           style = { ...style, transform: `translateX(${x}%)`, opacity };
         }
+        else if (text.effect === 'zoom-in') {
+          const s = interpolate(progress, [0, 0.5, 1], [1, 2.5, 3]);
+          const opacity = interpolate(progress, [0, 0.1, 0.8, 1], [0, 1, 1, 0]);
+          style = { ...style, transform: `scale(${s})`, opacity };
+        }
+        else if (text.effect === 'zoom-out') {
+          const s = interpolate(progress, [0, 0.5, 1], [3, 1.5, 1]);
+          const opacity = interpolate(progress, [0, 0.1, 0.8, 1], [0, 1, 1, 0]);
+          style = { ...style, transform: `scale(${s})`, opacity };
+        }
+        else if (text.effect === 'shake') {
+          const shakeX = Math.sin(textFrame * 15) * 8 * (1 - progress);
+          const shakeY = Math.cos(textFrame * 12) * 6 * (1 - progress);
+          const opacity = interpolate(progress, [0, 0.05, 0.9, 1], [0, 1, 1, 0]);
+          style = { ...style, transform: `translate(${shakeX}px, ${shakeY}px)`, opacity };
+        }
+        else if (text.effect === 'spin') {
+          const rotation = interpolate(progress, [0, 1], [0, 360]);
+          const opacity = interpolate(progress, [0, 0.1, 0.9, 1], [0, 1, 1, 0]);
+          style = { ...style, transform: `rotate(${rotation}deg)`, opacity };
+        }
         else {
           // Default fade
           const opacity = interpolate(frame, [text.startFrame, text.startFrame + 8, text.endFrame - 8, text.endFrame], [0, 1, 1, 0]);

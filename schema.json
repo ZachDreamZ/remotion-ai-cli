@@ -59,8 +59,8 @@
                   "y": { "enum": ["top", "center", "bottom"] }
                 }
               },
-              "effect": { "enum": ["none", "kinetic", "liquid", "shader", "typewriter", "wave", "glitch", "bounce", "scale", "flash", "pulse", "slide-left", "slide-right"] },
-              "bg": { "type": "string" },
+              "effect": { "enum": ["none", "kinetic", "liquid", "shader", "typewriter", "wave", "glitch", "bounce", "scale", "flash", "pulse", "slide-left", "slide-right", "zoom-in", "zoom-out", "spin", "shake"] },
+              "bg": { "type": ["string", "null"] },
               "accent": { "type": "string" }
             },
             "required": ["id", "content", "startFrame", "endFrame"],
