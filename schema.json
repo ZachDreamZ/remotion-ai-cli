@@ -80,7 +80,7 @@
               }
             },
             "required": ["id", "content", "startFrame", "endFrame"],
-            "additionalProperties": false
+            "additionalProperties": true
           }
         },
         "audio": {

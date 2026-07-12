@@ -1,0 +1,17 @@
+{
+  "name": "Remotion AI Project",
+  "duration": 30,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "tracks": {
+    "video": 0,
+    "audio": 2,
+    "text": 6
+  },
+  "exportSettings": {
+    "format": "mp4",
+    "quality": "1080p",
+    "fps": 30
+  }
+}

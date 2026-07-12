@@ -12,6 +12,7 @@ import { fileURLToPath } from 'url';
 import { setupSfxCommands, setupTransitionCommand, setupCaptionCommand, setupZoomCommand, setupGradeCommand, setupSyncCommand } from './commands.mjs';
 import { setupMaskCommand, setupBlendCommand, setupSilenceCommand, setupBrollCommand, setupPyramidCommand, setupHookCommand, setupNoiseCommand } from './advanced.mjs';
 import { setupTranscribeCommand, setupHighlightsCommand, setupSpeakersCommand, setupTrimCommand, setupKaraokeCommand, setupScenesCommand, setupNormalizeCommand, setupCropCommand, setupMcpCommand } from './clipping.mjs';
+import { setupScriptCommand, setupVoiceCommand, setupMotionCommand, setupSvgCommand, setupTransitionSfxCommand, setupCapcutCommand } from './motion.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TOOL_ROOT = path.join(__dirname, '..');
@@ -1560,6 +1561,12 @@ setupScenesCommand(program, getProject, saveProject);
 setupNormalizeCommand(program, getProject, saveProject);
 setupCropCommand(program, getProject, saveProject);
 setupMcpCommand(program, getProject, saveProject);
+setupScriptCommand(program, getProject, saveProject);
+setupVoiceCommand(program, getProject, saveProject);
+setupMotionCommand(program, getProject, saveProject);
+setupSvgCommand(program, getProject, saveProject);
+setupTransitionSfxCommand(program, getProject, saveProject);
+setupCapcutCommand(program, getProject, saveProject);
 
 // --- HISTORY COMMANDS ---
 
