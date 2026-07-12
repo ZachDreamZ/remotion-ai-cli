@@ -29,11 +29,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vendex-ai/remotion-ai-cli.git"
+    "url": "https://github.com/ZachDreamZ/remotion-ai-cli.git"
   },
-  "homepage": "https://github.com/Vendex-ai/remotion-ai-cli#readme",
+  "homepage": "https://github.com/ZachDreamZ/remotion-ai-cli#readme",
   "bugs": {
-    "url": "https://github.com/Vendex-ai/remotion-ai-cli/issues"
+    "url": "https://github.com/ZachDreamZ/remotion-ai-cli/issues"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -14,7 +14,7 @@
   <a href="#commands">Commands</a> ·
   <a href="#examples">Examples</a> ·
   <a href="#ai-agent-integration">AI Integration</a> ·
-  <a href="https://github.com/Vendex-ai/remotion-ai-cli">GitHub</a>
+  <a href="https://github.com/ZachDreamZ/remotion-ai-cli">GitHub</a>
 </p>
 
 ---
